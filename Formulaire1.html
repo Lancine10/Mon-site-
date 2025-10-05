@@ -1,0 +1,128 @@
+< !DOCTYPE html>
+<html lang= »fr »>
+<head>
+  <meta charset= »UTF-8 »>
+  <title>Remplir ce formulaire</title>
+  <style>
+    Body {
+      Font-family : Arial, sans-serif ;
+      Background-color : #f2f2f2 ;
+      Margin : 0 ;
+      Padding : 0 ;
+    }
+
+    Header {
+      Background-color : #333 ;
+      Color : white ;
+      Text-align : center ;
+      Padding : 20px ;
+    }
+
+    Nav {
+      Background : #444 ;
+      Display : flex ;
+      Justify-content : center ;
+    }
+
+    Nav a {
+      Color : white ;
+      Text-decoration : none ;
+      Padding : 14px 20px ;
+    }
+
+    Nav a :hover {
+      Background : #666 ;
+    }
+
+    .container {
+      Width : 90% ;
+      Max-width : 500px ;
+      Background-color : white ;
+      Margin : 40px auto ;
+      Padding : 20px ;
+      Border-radius : 10px ;
+      Box-shadow : 0 0 10px rgba(0,0,0,0.1) ;
+    }
+
+    Label {
+      Font-weight : bold ;
+      Display : block ;
+      Margin-bottom : 5px ;
+    }
+
+    Input, textarea {
+      Width : 100% ;
+      Padding : 10px ;
+      Margin-bottom : 15px ;
+      Border : 1px solid #ccc ;
+      Border-radius : 5px ;
+      Font-size : 16px ;
+    }
+
+    Input :focus, textarea :focus {
+      Border-color : #333 ;
+      Outline : none ;
+    }
+
+    Button {
+      Background-color : #333 ;
+      Color : white ;
+      Padding : 10px 20px ;
+      Border : none ;
+      Border-radius : 5px ;
+      Cursor : pointer ;
+      Font-size : 16px ;
+    }
+
+    Button :hover {
+      Background-color : #555 ;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contactez-nous</h1>
+	
+  </header>
+
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="page1.html">Page 1</a>
+    <a href="Formulaire1.html">formulaire</a>
+  </nav>
+
+  <div class="container">
+    <form
+	action="https://formspree.io/f/mnngzpdj" method="POST">
+      <label for="nom">Nom :</label>
+      <input type="text " id= "nom " name= "nom " required>
+	 <label>Entrer votre Prénom</label><br>
+	<input type= "text" id="Prénom " name="Prénom" required><br><br>
+	 <label>votre âge </label><br>
+	 <input type="number"
+	 name="Äge"><br><br>
+	 <label>Sexe </label><br>
+	 <input type="radio"
+	 name="Sexe" value="Homme"> Homme<br> 
+	 <Input type="radio" name="Sexe" value="femme">femme<br><br>
+	 <label>Niveau d'etude</label><br>
+	 <input type="radio"
+	 name="Niveau d'etude" value="lycee"> Lycée<br> 
+	 <Input type="radio" name="Niveau d'etude" value="université">université<br><br>
+	 <input type="radio" id="Niveau d'etude" name="Niveau d'etude" required> Master<br><br>
+      <label for="email ">E-mail :</label>
+      <input type= "email " id= "email " name= "email " required>
+
+      <label for= "telephone ">Téléphone :</label>
+      <input type= "tel " id= "telephone " name= "telephone " placeholder= "+223… " required>
+      <label for= "message ">Message :</label>
+      <textarea id= "message "name= "message " rows= "5 " required></textarea>
+
+      <button type= "submit ">Envoyer</button>
+    </form>
+  </div>
+
+</body>
+</html>
+
